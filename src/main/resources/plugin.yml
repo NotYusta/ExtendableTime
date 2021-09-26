@@ -1,0 +1,12 @@
+name: ExtendableTime
+version: 1.0
+main: id.raznar.extendedtime.ExtendableTime
+authors: [ Yusta ]
+description: Extends world's time
+
+commands:
+  extendedtime:
+    description: ExtendableTime main command
+    usage: /<command>
+    aliases: [exttime, extime]
+    permission: extendedtime.admin
