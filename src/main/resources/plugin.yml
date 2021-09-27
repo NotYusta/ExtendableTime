@@ -5,8 +5,8 @@ authors: [ Yusta ]
 description: Extends world's time
 
 commands:
-  extendedtime:
+  extendabletime:
     description: ExtendableTime main command
     usage: /<command>
-    aliases: [exttime, extime]
-    permission: extendedtime.admin
+    aliases: [extime]
+    permission: extendabletime.admin

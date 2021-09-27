@@ -39,17 +39,16 @@ public class Commands implements CommandExecutor, TabExecutor {
                 Utils.sendMessage(sender, Lang.ERROR_COMMAND_PERMISSION_REQUIRED);
             }
         }
-        return false;
+        return true;
     }
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
         if(command.getName().equalsIgnoreCase("extendabletime")) {
+            List<String> commandList = new ArrayList<>();
             if(args.length == 1) {
                 String[] cmdsArgs = {"help", "reload", "setday", "setnight"};
-
-                ArrayList<String> commandList = new ArrayList<>(Arrays.asList(cmdsArgs));
-                Collections.sort(commandList);
+                commandList.addAll(Arrays.asList(cmdsArgs));
 
                 return commandList;
             }

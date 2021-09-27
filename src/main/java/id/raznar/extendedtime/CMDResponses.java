@@ -11,10 +11,10 @@ public class CMDResponses {
     public void sendHelpMessage(CommandSender sender) {
         Utils.sendMessage(sender,
                 "&eExtended Time Commands:" +
-                        "\n&m&b[-----------------------]" +
+                        "\n&b&m[-----------------------]" +
                         "\n/extime reload" +
                         "\n/extime help" +
-                        "\n&m&b[-----------------------]" +
+                        "\n&b&m[-----------------------]" +
                         "\n&eMade with love by Yusta <3"
                 );
     }

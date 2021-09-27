@@ -28,6 +28,7 @@ public class VariableTime {
             if(!config.getConfig().contains(world.getName())) {
                 config.getConfig().addDefault(world.getName() + ".day", 1.0);
                 config.getConfig().addDefault(world.getName() + ".night", 1.0);
+                config.getConfig().options().copyDefaults(true);
                 config.saveConfig();
                 worldSpeedDay.put(world, 1.0);
                 worldTimeDay.put(world, 0.0);
